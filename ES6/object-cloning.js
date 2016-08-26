@@ -27,3 +27,12 @@ When you are adding a new field to an object, it's good practice to create new o
 This leads to clear code and reduces mistakes.
 This new syntax encourages us to do that.
 */
+/*-----------------------------------
+Adding Elements to Arrays
+
+Just like objects, we can clone arrays too. See the following example:
+*/
+const marks = [10, 20, 30];
+const newMarks = [...marks, 40];
+
+console.log(marks, newMarks);
