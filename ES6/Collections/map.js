@@ -1,3 +1,11 @@
+/*
+Using ES6 MapCollections
+Map is the first data structure/collection we’ll examine.
+Maps are collections of keys and values of any type.
+It’s easy to create new Maps, add/remove values, loop over keys/values and efficiently determine their size.
+Here are the crucial methods:
+*/
+
 const map = new Map(); // Create a new Map
 
 map.set("hobby","tennis"); // Sets a key value pair
