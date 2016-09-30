@@ -22,6 +22,11 @@ module.exports = {
       }
     ]
   },
+
+  postcss: [
+    require('autoprefixer')
+  ],
+  
   devServer: {
     contentBase: "./public",
     colors: true,
