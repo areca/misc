@@ -1,0 +1,7 @@
+{
+  "domain": "www.mysite.com",
+  "mongodb": {
+    "host": "localhost",
+    "port": 27017
+  }
+}
