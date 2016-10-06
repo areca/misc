@@ -31,3 +31,15 @@ li{
 #big-circle{
   #circle(100px)
 }
+
+@var: #004590;
+
+div{
+  height: 50px;
+  width: 50px;
+  background-color: @var;
+
+  &:hover{
+    background-color: fadeout(@var, 50%)
+  }
+}
