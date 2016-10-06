@@ -1,0 +1,82 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/*
+p{
+  background-color: @background-color;
+  color: @text-color;
+  padding: 15px;
+}
+
+ul{
+  background-color: @background-color;
+}
+
+li{
+  color: @text-color;
+}
+
+
+#circle(@size: 25px){
+  background-color: #4CAF50;
+  border-radius: 100%;
+
+  width: @size;
+  height: @size;
+}
+
+#small-circle{
+  #circle
+}
+
+#big-circle{
+  #circle(100px)
+}
+
+@var: #004590;
+
+div{
+  height: 50px;
+  width: 50px;
+  background-color: @var;
+
+  &:hover{
+    background-color: fadeout(@var, 50%)
+  }
+}*/
+.gradient {
+  background: #F5F5F5;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #17A589), color-stop(1, #58D68D));
+  background: -ms-linear-gradient(bottom, #17A589, #58D68D);
+  background: -moz-linear-gradient(center bottom, #17A589 0%, #58D68D 100%);
+  background: -o-linear-gradient(#58D68D, #17A589);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#58D68D', endColorstr='#17A589', GradientType=0);
+}
+.bw-gradient {
+  background: #EEE;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e6e6e6), color-stop(1, #ffffff));
+  background: -ms-linear-gradient(bottom, #e6e6e6 0%, #ffffff 100%);
+  background: -moz-linear-gradient(center bottom, #e6e6e6 0%, #ffffff 100%);
+  background: -o-linear-gradient(#ffffff, #e6e6e6);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+}
+.bordered {
+  border-top: solid 1px #EEE;
+  border-left: solid 1px #E5E5E5;
+  border-right: solid 1px #E5E5E5;
+  border-bottom: solid 1px #DDD;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+}

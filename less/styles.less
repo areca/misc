@@ -2,7 +2,7 @@
 
 @background-color: #ffffff;
 @text-color: #1A237E;
-
+/*
 p{
   background-color: @background-color;
   color: @text-color;
@@ -44,4 +44,20 @@ div{
   &:hover{
     background-color: fadeout(@var, 50%)
   }
+}*/
+
+.gradient {
+	.gradient(#F5F5F5, #17A589, #58D68D);
+}
+
+.bw-gradient {
+	.bw-gradient(#EEE, 230, 255);
+}
+
+.bordered {
+	.bordered(#EEE, #E5E5E5, #DDD, #E5E5E5);
+        .drop-shadow(0, 3px, 5px, 0.2);
+        .rounded(15px);
+        .rotation(-15deg);
+
 }
