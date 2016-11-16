@@ -28,7 +28,7 @@ let sortedArray = _.sortBy(resultArray, 'count');
 console.log(extractChars(sortedArray.reverse()).split('_')[0]);
 
 /* TODO
-1. Add Test
+1. Add Test :)
 2. Refactor with ES6 features
-3. Read string from file or console 
+3. Read string from console or file
 */
