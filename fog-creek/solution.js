@@ -16,12 +16,15 @@ let countChar = function (toSearch, char){
   return obj;
 }
 
+let extractChars = function(arr){
+  return _.reduce(arr, function(memo, item){ return memo + item.char}, '');
+}
+
 for(var i = 0; i < chars.length; i++){
-  console.log(chars[i]);
   var result = countChar(str, chars[i]);
   resultArray.push(result);
 }
 
 let sortedArray = _.sortBy(resultArray, 'count');
 //console.log(resultArray);
-console.log(sortedArray);
+console.log(extractChars(sortedArray.reverse()).split('_')[0]);
