@@ -25,11 +25,10 @@ for(var i = 0; i < chars.length; i++){
 }
 
 let sortedArray = _.sortBy(resultArray, 'count');
-//console.log(resultArray);
 console.log(extractChars(sortedArray.reverse()).split('_')[0]);
 
 /* TODO
-1. test
-2. Refactor ES6
-3. Read string from file
+1. Add Test
+2. Refactor with ES6 features
+3. Read string from file or console 
 */
