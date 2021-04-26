@@ -1,43 +1,40 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
+import 'package:icon_badge/icon_badge.dart';
 
-void main() {
-  runApp(MyApp());
-}
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
-        primarySwatch: Colors.amber,
-      ),
-      home: Container( // grey box
-        child:  Center(
-          child:  Text(
-            "Playground",
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 24,
-              letterSpacing: 16
-            ),
+      debugShowCheckedModeBanner: false,
+      home: TestApp(),
+    );
+  }
+}
+
+class TestApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Test App'),
+        actions: <Widget>[
+          IconBadge(
+            icon: Icon(Icons.notifications_none),
+            itemCount: 100,
+            badgeColor: Colors.red,
+            itemColor: Colors.white,
+            maxCount: 99,
+            hideZero: true,
+            onTap: () {
+              print('test');
+            },
           ),
-        ),
-        width: 320,
-        height: 240,
-        color: Colors.grey[300],
+        ],
+      ),
+      body: Center(
+        child: Text('Icon badge test'),
       ),
     );
   }
